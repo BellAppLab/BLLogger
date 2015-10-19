@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BLLogger"
-  s.version          = "0.2.1"
+  s.version          = "0.3.0"
   s.summary          = "A Swift dLog implementation."
   s.homepage         = "https://github.com/BellAppLab/BLLogger"
   s.license          = 'MIT'

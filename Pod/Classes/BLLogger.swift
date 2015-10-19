@@ -2,10 +2,10 @@ import Foundation
 
 public func dLog(@autoclosure message:  () -> String, filename: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) {
 #if DEBUG
-    NSLog("[\(filename.lastPathComponent):\(line)] \(function) - %@", message())
+    NSLog("[\(NSURL(string: filename)?.lastPathComponent):\(line)] \(function) - %@", message())
 #else
 #endif
 }
-public func aLog(message: String, filename: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) {
-    NSLog("[\(NSURL(string: filename)?.lastPathComponent):\(line)] \(function) - %@", message)
+public func aLog(@autoclosure message:  () -> String, filename: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) {
+    NSLog("[\(NSURL(string: filename)?.lastPathComponent):\(line)] \(function) - %@", message())
 }
