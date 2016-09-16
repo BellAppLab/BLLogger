@@ -1,11 +1,11 @@
 import Foundation
 
-public func dLog(@autoclosure message:  () -> String, filename: String = #file, function: String = #function, line: Int = #line) {
+public func dLog(_ message: @autoclosure () -> String, filename: String = #file, function: String = #function, line: Int = #line) {
 #if DEBUG
-    NSLog("[\(NSURL(string: filename)?.lastPathComponent):\(line)] \(function) - %@", message())
+    debugPrint("[\(NSURL(string: filename)?.lastPathComponent):\(line)]", "\(function)", message(), separator: " - ")
 #else
 #endif
 }
-public func aLog(@autoclosure message:  () -> String, filename: String = #file, function: String = #function, line: Int = #line) {
-    NSLog("[\(NSURL(string: filename)?.lastPathComponent):\(line)] \(function) - %@", message())
+public func aLog(_ message: @autoclosure () -> String, filename: String = #file, function: String = #function, line: Int = #line) {
+    print("[\(URL(string: filename)?.lastPathComponent):\(line)]", "\(function)", message(), separator: " - ")
 }
