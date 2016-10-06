@@ -23,8 +23,8 @@ func someFunction() {
 1. Install BLLogger
 2. Add the Swift degub flag to your project
 
-![step1](https://github.com/BellAppLab/BLLogger/steps/step_01.png)
-![step1](https://github.com/BellAppLab/BLLogger/steps/step_02.png)
+![step1](./steps/step_01.png)
+![step1](./steps/step_02.png)
 
     2.1. Select your project on the Project navigator
     2.2. Select your project on the Target list
@@ -34,8 +34,8 @@ func someFunction() {
 
 3. Add the Swift degub flag to the Pods project
 
-![step1](https://github.com/BellAppLab/BLLogger/steps/step_03.png)
-![step1](https://github.com/BellAppLab/BLLogger/steps/step_04.png)
+![step1](./steps/step_03.png)
+![step1](./steps/step_04.png)
 
     3.1. Select the Pods project on the Project navigator
     3.2. Select the Pods project on the Target list
