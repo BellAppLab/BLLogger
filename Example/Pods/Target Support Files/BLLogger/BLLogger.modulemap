@@ -1,6 +1,0 @@
-framework module BLLogger {
-  umbrella header "BLLogger-umbrella.h"
-
-  export *
-  module * { export * }
-}

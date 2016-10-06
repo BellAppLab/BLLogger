@@ -1,21 +1,17 @@
 # BLLogger
 
-[![CI Status](http://img.shields.io/travis/Bell App Lab/BLLogger.svg?style=flat)](https://travis-ci.org/Bell App Lab/BLLogger)
-[![Version](https://img.shields.io/cocoapods/v/BLLogger.svg?style=flat)](http://cocoapods.org/pods/BLLogger)
-[![License](https://img.shields.io/cocoapods/l/BLLogger.svg?style=flat)](http://cocoapods.org/pods/BLLogger)
-[![Platform](https://img.shields.io/cocoapods/p/BLLogger.svg?style=flat)](http://cocoapods.org/pods/BLLogger)
+A Swift dLog implementation.
 
 ## Requirements
 
-iOS 8.0+
+* Xcode
+* Swift 2.0
 
 ## Usage
 
 * After installing and configuring BLLogger:
 
 ``` swift
-import BLLogger
-
 func someFunction() {
     dLog("This message will appear on your console when you're in debug mode")
     aLog("This message will always appear on your console")
@@ -47,18 +43,11 @@ func someFunction() {
     3.4. Search for swift
     3.5. Add `-DDEBUG` to your debug scheme
 
-**Note:** Unfortunately you'll have to redo steps 3.1 through 3.5 whenever you run `pod install` or `pod update`, because I haven't found a way to do that automatically 😓
-
 ## Installation
 
-### CocoaPods
+### Cocoapods
 
-BLLogger is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-``` ruby
-pod "BLLogger"
-```
+Because of [this](http://stackoverflow.com/questions/39637123/cocoapods-app-xcworkspace-does-not-exists), I've dropped support for Cocoapods on this repo. I cannot have production code rely on a dependency manager that breaks this badly. 
 
 ### Git Submodules
 
@@ -70,10 +59,10 @@ To install BLLogger using git submodules:
 
 ```
 cd toYourProjectsFolder
-git submodule add -b Submodule --name BLLogger https://github.com/BellAppLab/BLLogger.git
+git submodule add --name BLLogger https://github.com/BellAppLab/BLLogger.git
 ```
 
-Navigate to the new BLLogger folder and drag the Pods folder to your Xcode project.
+Navigate to the new BLLogger folder and drag the `Source` folder into your Xcode project.
 
 ## Author
 
