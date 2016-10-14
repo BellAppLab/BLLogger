@@ -2,7 +2,7 @@ import Foundation
 
 public func dLog(_ message: @autoclosure () -> String, filename: String = #file, function: String = #function, line: Int = #line) {
 #if DEBUG
-    debugPrint("[\(NSURL(string: filename)?.lastPathComponent):\(line)]", "\(function)", message(), separator: " - ")
+    debugPrint("[\(URL(string: filename)?.lastPathComponent):\(line)]", "\(function)", message(), separator: " - ")
 #else
 #endif
 }
