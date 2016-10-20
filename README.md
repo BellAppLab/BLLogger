@@ -67,7 +67,7 @@ git submodule add -b submodule --name BLLogger https://github.com/BellAppLab/BLL
 **Swift 2 support**
 
 ```
-git submodule add -b swift2 --name Backgroundable https://github.com/BellAppLab/Backgroundable.git
+git submodule add -b swift2 --name BLLogger https://github.com/BellAppLab/BLLogger.git
 ```
 
 Then, navigate to the new BLLogger folder and drag the `Source` folder into your Xcode project.
