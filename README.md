@@ -2,7 +2,7 @@
 
 A Swift dLog implementation.
 
-_v0.6.0_
+_v0.7.0_
 
 ## Requirements
 
@@ -64,7 +64,13 @@ cd toYourProjectsFolder
 git submodule add -b submodule --name BLLogger https://github.com/BellAppLab/BLLogger.git
 ```
 
-Navigate to the new BLLogger folder and drag the `Source` folder into your Xcode project.
+**Swift 2 support**
+
+```
+git submodule add -b swift2 --name BLLogger https://github.com/BellAppLab/BLLogger.git
+```
+
+Then, navigate to the new BLLogger folder and drag the `Source` folder into your Xcode project.
 
 ## Author
 
