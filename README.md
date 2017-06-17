@@ -2,7 +2,7 @@
 
 A Swift dLog implementation.
 
-_v0.6.0_
+_v0.7.0_
 
 ## Requirements
 
