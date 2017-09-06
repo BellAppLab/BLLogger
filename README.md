@@ -2,7 +2,7 @@
 
 A Swift dLog implementation.
 
-_v0.7.0_
+_v0.7.1_
 
 ## Requirements
 
@@ -31,19 +31,8 @@ func someFunction() {
     2.1. Select your project on the Project navigator
     2.2. Select your project on the Target list
     2.3. Select the Build Settings tab
-    2.4. Search for swift
-    2.5. Add `-DDEBUG` to your debug scheme
-
-3. Add the Swift degub flag to the Pods project
-
-![step1](./steps/step_03.png)
-![step1](./steps/step_04.png)
-
-    3.1. Select the Pods project on the Project navigator
-    3.2. Select the Pods project on the Target list
-    3.3. Select the Build Settings tab
-    3.4. Search for swift
-    3.5. Add `-DDEBUG` to your debug scheme
+    2.4. Search for `other swift flags`
+    2.5. Add `-DDEBUG` to your `debug` scheme
 
 ## Installation
 
@@ -79,5 +68,3 @@ Bell App Lab, apps@bellapplab.com
 ## License
 
 BLLogger is available under the MIT license. See the LICENSE file for more info.
-
-
