@@ -1,17 +1,29 @@
-# BLLogger
+# BLLogger [![Version](https://img.shields.io/badge/Version-1.0-black.svg?style=flat)](#installation) [![License](https://img.shields.io/cocoapods/l/BLLogger.svg?style=flat)](#license)
+
+[![Platforms](https://img.shields.io/badge/Platforms-iOS\watchOS|tvOS|macOS|Linux-brightgreen.svg?style=flat)](#installation)
+[![Swift support](https://img.shields.io/badge/Swift-3.3%20%7C%204.1-red.svg?style=flat)](#swift-versions-support)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/BLLogger.svg?style=flat&label=CocoaPods)](https://cocoapods.org/pods/BLLogger)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-orange.svg?style=flat)](https://github.com/apple/swift-package-manager)
+[![Twitter](https://img.shields.io/badge/Twitter-@BellAppLab-blue.svg?style=flat)](http://twitter.com/BellAppLab)
+
+![BLLogger](./Images/bllogger.png)
 
 A Swift dLog implementation.
 
-_v0.7.1_
+To be quite honest, this is so simple that it's probably easier to just copy and paste the code directly into your project, instead of adding yet another dependency to it.
 
-## Requirements
+You can find the gist [here](https://gist.github.com/BellAppLab/cf99a9943f8a13df616e24e4e3b6e640).
 
-* Xcode
-* Swift 3.0
+## Specs
+
+* iOS 9+
+* watchOS 3+
+* tvOS 9+
+* macOS 10.11+
+* Swift 3.3+
 
 ## Usage
-
-* After installing and configuring BLLogger:
 
 ``` swift
 func someFunction() {
@@ -22,48 +34,52 @@ func someFunction() {
 
 ## Configuration
 
-1. Install BLLogger
-2. Add the Swift degub flag to your project
-
-![step1](./steps/step_01.png)
-![step1](./steps/step_02.png)
-
-    2.1. Select your project on the Project navigator
-    2.2. Select your project on the Target list
-    2.3. Select the Build Settings tab
-    2.4. Search for `other swift flags`
-    2.5. Add `-DDEBUG` to your `debug` scheme
+BLLogger works by using the `DEBUG` flag. As of [Xcode 8](https://stackoverflow.com/a/47395485/1603482) and above, no configuration is necessary for BLLogger to work.
 
 ## Installation
 
 ### Cocoapods
 
-Because of [this](http://stackoverflow.com/questions/39637123/cocoapods-app-xcworkspace-does-not-exists), I've dropped support for Cocoapods on this repo. I cannot have production code rely on a dependency manager that breaks this badly. 
+```ruby
+pod 'BLLogger', '~> 1.0'
+```
+
+Then `import BLLogger` where needed.
+
+### Carthage
+
+```swift
+github "BellAppLab/BLLogger" ~> 1.0
+```
+
+Then `import BLLogger` where needed.
+
+### Swift Package Manager
+
+```swift
+dependencies: [
+.package(url: "https://github.com/BellAppLab/BLLogger", from: "1.0")
+]
+```
+
+Then `import BLLogger` where needed.
 
 ### Git Submodules
 
-**Why submodules, you ask?**
-
-Following [this thread](http://stackoverflow.com/questions/31080284/adding-several-pods-increases-ios-app-launch-time-by-10-seconds#31573908) and other similar to it, and given that Cocoapods only works with Swift by adding the use_frameworks! directive, there's a strong case for not bloating the app up with too many frameworks. Although git submodules are a bit trickier to work with, the burden of adding dependencies should weigh on the developer, not on the user. :wink:
-
-To install BLLogger using git submodules:
-
-```
+```shell
 cd toYourProjectsFolder
 git submodule add -b submodule --name BLLogger https://github.com/BellAppLab/BLLogger.git
 ```
 
-**Swift 2 support**
-
-```
-git submodule add -b swift2 --name BLLogger https://github.com/BellAppLab/BLLogger.git
-```
-
-Then, navigate to the new BLLogger folder and drag the `Source` folder into your Xcode project.
+Then drag the `BLLogger` folder into your Xcode project.
 
 ## Author
 
 Bell App Lab, apps@bellapplab.com
+
+### Credits
+
+[Logo image](https://thenounproject.com/search/?q=log&i=65876#) by [Ronald Cortez](https://thenounproject.com/RonaldCortez) from [The Noun Project](https://thenounproject.com/)
 
 ## License
 
