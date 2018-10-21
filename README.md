@@ -1,4 +1,4 @@
-# BLLogger [![Version](https://img.shields.io/badge/Version-1.0-black.svg?style=flat)](#installation) [![License](https://img.shields.io/cocoapods/l/BLLogger.svg?style=flat)](#license)
+# BLLogger [![Version](https://img.shields.io/badge/Version-1.0.1-black.svg?style=flat)](#installation) [![License](https://img.shields.io/cocoapods/l/BLLogger.svg?style=flat)](#license)
 
 [![Platforms](https://img.shields.io/badge/Platforms-iOS\watchOS|tvOS|macOS|Linux-brightgreen.svg?style=flat)](#installation)
 [![Swift support](https://img.shields.io/badge/Swift-3.3%20%7C%204.1-red.svg?style=flat)](#swift-versions-support)
@@ -58,7 +58,7 @@ Then `import BLLogger` where needed.
 
 ```swift
 dependencies: [
-.package(url: "https://github.com/BellAppLab/BLLogger", from: "1.0")
+    .package(url: "https://github.com/BellAppLab/BLLogger", from: "1.0")
 ]
 ```
 

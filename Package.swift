@@ -9,8 +9,7 @@ let package = Package(
                  targets: ["BLLogger"]),
         ],
     targets: [
-        .target(
-            name: "BLLogger"
-        ),,
-    swiftLanguageVersions: [3, 4]
+        .target(name: "BLLogger"),
+        ],
+    swiftLanguageVersions: [3, 4.1, 4,2]
 )

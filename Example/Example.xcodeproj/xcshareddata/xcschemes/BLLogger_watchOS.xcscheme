@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "653117EF20F9F7C300DCC695"
-               BuildableName = "BLLogger_watchOS.framework"
+               BuildableName = "BLLogger.framework"
                BlueprintName = "BLLogger_watchOS"
                ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "653117EF20F9F7C300DCC695"
-            BuildableName = "BLLogger_watchOS.framework"
+            BuildableName = "BLLogger.framework"
             BlueprintName = "BLLogger_watchOS"
             ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "653117EF20F9F7C300DCC695"
-            BuildableName = "BLLogger_watchOS.framework"
+            BuildableName = "BLLogger.framework"
             BlueprintName = "BLLogger_watchOS"
             ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
