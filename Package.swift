@@ -11,5 +11,5 @@ let package = Package(
     targets: [
         .target(name: "BLLogger"),
         ],
-    swiftLanguageVersions: [3, 4.1, 4,2]
+    swiftLanguageVersions: [3.3, 4.1, 4.2]
 )
